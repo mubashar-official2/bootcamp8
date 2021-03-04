@@ -46,7 +46,7 @@ return (
   <div className={classes.root}>
 
       <table>
-        <tr><td>Counties</td><td>TotalConfirmed</td><td>TotalRecovered</td></tr>
+        <tr><td>Counties</td><td>TotalConfirmed</td><td>TotalRecovered</td><td>Data</td></tr>
         <hr/>
               { 
                  Object.keys(globalData).map((key,ind)=>
@@ -60,8 +60,13 @@ return (
                               {globalData[key]['TotalConfirmed']}
                               </td>
 
+
                               <td>
                                  {globalData[key]['TotalRecovered']}
+                              </td>
+
+                              <td>
+                                 {globalData[key]['Date']}
                               </td>
 
                           </tr> 
